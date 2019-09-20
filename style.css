@@ -18,12 +18,10 @@ img {
 .btn-default {
   color: white;
   background: red;
-  text-transform: uppercase;
 }
 
 .btn-white {
   color: red;
   background: white;
-  text-transform: uppercase;
   border-radius: 0;
 }
