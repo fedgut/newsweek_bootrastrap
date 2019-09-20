@@ -3,6 +3,18 @@ img {
   max-height: 100%;
 }
 
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
 .navbar {
   background: red;
   height: 60px;
@@ -24,4 +36,10 @@ img {
   color: red;
   background: white;
   border-radius: 0;
+}
+
+.people-list {
+  height: 75px;
+  width: 75px;
+  object-fit: contain;
 }
