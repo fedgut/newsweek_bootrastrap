@@ -15,34 +15,41 @@
 
 <body>
 
-  <div class="container">
-    <div class="row">
-      <nav class="navbar">
-        <h1>Thu, Sep 19, 2019</h1>
-        <a href="#" class="navbar-brand">
-          <img class="top-logo" src="assets/newsweeklovo.svg" alt="#" class="navbar-brand">
-        </a>
-        <div class="btn-group">
-          <button type="button" class="btn btn-default"> Sign In</button>
-          <button type="button" class="btn    btn-white"> Subscribe</button>
-        </div>
-    </div>
-    <div class="row">
-      <a class="nav-item nav-link" href="#">U.S.</a>
-      <a class="nav-item nav-link" href="#">World</a>
-      <a class="nav-item nav-link" href="#">Business</a>
-      <a class="nav-item nav-link" href="#">Tech & Science</a>
-      <a class="nav-item nav-link" href="#">Culture</a>
-      <a class="nav-item nav-link" href="#">Sports</a>
-      <a class="nav-item nav-link" href="#">Health</a>
-      <a class="nav-item nav-link" href="#">Opinion</a>
-      <a class="nav-item nav-link" href="#">Vantage</a>
-      <div class="col-2">
-        <input type="text" class="form-control " placeholder="Search">
+  <nav class="navbar .navbar-fixed-top ">
+    <a href="#" class="navbar-brand">
+      <img src="assets/newsweeklovo.svg" alt="Newsweek logo">
+    </a>
+    <div>
+      <div class="btn-group .btn-group-xs ">
+        <button class="btn btn-default navbar-btn">Sign In</button>
+        <button class="btn btn-white navbar-btn">Subscribe <span
+            class="glyphicon glyphicon-chevron-right"></span></button>
       </div>
+      <span class="glyphicon-menu-hamburger"></span>
     </div>
-    </nav>
+  </nav>
+
+  <article class="container col-12 col-sm-12">
+    <h1>Top Story</h1>
+  </article>
+
+
+
+  <div class="row d-none d-lg-block d-xl-block">
+    <a class="navbar-link" href="#">U.S.</a>
+    <a class="navbar-link" href="#">World</a>
+    <a class="navbar-link" href="#">Business</a>
+    <a class="navbar-link" href="#">Tech & Science</a>
+    <a class="navbar-link" href="#">Culture</a>
+    <a class="navbar-link" href="#">Sports</a>
+    <a class="navbar-link" href="#">Health</a>
+    <a class="navbar-link" href="#">Opinion</a>
+    <a class="navbar-link" href="#">Vantage</a>
+    <div class="col-2">
+      <input type="text" class="form-control" placeholder="Search">
+    </div>
   </div>
+
 
 
 
