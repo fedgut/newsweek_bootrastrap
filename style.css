@@ -5,6 +5,13 @@ img {
 
 ul {
   list-style: none;
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
 }
 
 li {
@@ -13,23 +20,28 @@ li {
   flex-wrap: nowrap;
   overflow: hidden;
   text-overflow: clip;
+  border-bottom: 1px solid rgba(173, 173, 173, 0.157);
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: black;
+  text-decoration-color: red;
 }
 
 .navbar {
   background: red;
   height: 60px;
-  justify-content: space-between;
-  overflow: none;
-  flex-wrap: nowrap;
-}
-
-.navbar-brand {
-  height: 45px;
 }
 
 .btn-default {
   color: white;
   background: red;
+  word-wrap: none;
+  width: 78px;
 }
 
 .btn-white {
@@ -42,4 +54,65 @@ li {
   height: 75px;
   width: 75px;
   object-fit: contain;
+  margin-inline-end: 15px;
+}
+
+.btn-overlay {
+  bottom: 0;
+  left: 0;
+  color: red;
+  font-size: 110%;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.945);
+}
+
+.min-width {
+  min-width: 290px;
+}
+
+.section-title {
+  color: rgba(28, 31, 34, 0.644);
+  font-size: 1.2rem;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.small-article-title {
+  font-size: 1rem;
+}
+
+.container {
+  margin-top: 1rem;
+}
+
+.more-stories-img {
+  width: 135px;
+  height: 90px;
+  object-fit: contain;
+  margin-inline-end: 10px;
+  margin-block-end: 10px;
+}
+
+.bordered {
+  border-top: 1px solid rgba(53, 57, 61, 0.226);
+  padding-top: 15px;
+}
+
+.main-articles {
+  background-color: rgba(165, 165, 165, 0.164);
+  padding: 10px 15px 0 0;
+}
+
+.grey-link {
+  background: rgb(178, 179, 180);
+  padding: 5px;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.whole-b {
+  padding: 10px 10px 10px 15px;
+  border: 1px solid rgba(92, 92, 92, 0.144);
 }

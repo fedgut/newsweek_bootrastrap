@@ -6,9 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="bootstrap-reboot.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
 
   <title>Newsweek</title>
@@ -16,21 +14,22 @@
 
 <body>
 
-  <nav class="navbar .navbar-fixed-top ">
-    <a href="#" class="navbar-brand">
+  <nav class="navbar .navbar-fixed-top flex-nowrap overflow-hidden justify-content-between">
+    <a href="#" class="navbar-brand h-100">
       <img src="assets/newsweeklovo.svg" alt="Newsweek logo">
     </a>
     <div>
-      <div class="btn-group .btn-group-xs ">
+      <div class="btn-group .btn-group-xs overflow-hidden">
         <button class="btn btn-default navbar-btn text-capitalize">Sign In</button>
         <button class="btn btn-white navbar-btn text-capitalize">Subscribe <span
             class="glyphicon glyphicon-chevron-right"></span></button>
       </div>
       <span class="glyphicon-menu-hamburger"></span>
     </div>
+    </div>
   </nav>
 
-  <div class="row d-none d-lg-block d-xl-block">
+  <div class="d-none d-lg-block d-xl-block">
     <a class="navbar-link" href="#">U.S.</a>
     <a class="navbar-link" href="#">World</a>
     <a class="navbar-link" href="#">Business</a>
@@ -40,31 +39,35 @@
     <a class="navbar-link" href="#">Health</a>
     <a class="navbar-link" href="#">Opinion</a>
     <a class="navbar-link" href="#">Vantage</a>
-    <div class="col-2">
-      <input type="text" class="form-control" placeholder="Search">
-    </div>
+    <input type="text" class="navbar-form" placeholder="Search">
+
   </div>
 
-  <div class="weird container">
+  <div class="weird container overflow-hidden min-width">
 
-    <article class="container col-12 col-sm-12">
-      <h1 class="section-title">Top Story</h1>
-      <img src="assets/saudi-arabia-oil-iran-houthis-attack.jpg" alt="Saudi" class="img-responsive">
-      <a href="#">
-        <h2 class="lead">Saudi Oil Attacks: Iran-Backed Houthis Warn Foreigners of Further Strikes</h2>
+    <article class="position-relative col-12 col-sm-12 overlayed overflow-hidden">
+      <h2 class="section-title font-weight-bold text-uppercase">Top Story</h2>
+      <div class="position-relative">
+        <a class="btn-overlay font-weight-bold position-absolute text-uppercase" href="#">News</a>
+        <a href="#">
+          <img class="min-width" src="assets/saudi-arabia-oil-iran-houthis-attack.jpg" alt="Saudi"
+            class="img-responsive"></a>
+      </div>
+      <a class="" href="#">
+        <h4 class="font-weight-bold">Saudi Oil Attacks: Iran-Backed Houthis Warn Foreigners of Further Strikes</h4>
       </a>
       <p>The Houthis have claimed responsibility for Saturday's attack, but the U.S. has suggested that Iran is
-        ultimately
-        to
-        blame.</p>
+        ultimately to blame.
+      </p>
+
     </article>
 
-    <section class="col-12 col-sm-12">
-      <h1 class="section-title">More Stories</h1>
-      <article>
-        <img src="assets/trump-new-mexico.jpg" alt="Trump" class="img-responsive">
+    <section class="container col-12 col-sm-12">
+      <h2 class="section-title font-weight-bold text-uppercase">More Stories</h2>
+      <article class="overflow-hidden min-width bordered">
+        <img src="assets/trump-new-mexico.jpg" alt="Trump" class="more-stories-img float-left">
         <a href="#">
-          <h2 class="lead">Trump Raises Questions of Dual Loyalty Among Hispanic Americans</h2>
+          <h2 class="font-weight-bold small-article-title">Trump Raises Questions of Dual Loyalty Among Hispanic Americans</h2>
         </a>
         <p>Just one month after the president suggested that Jewish Americans have a dual loyalty to Israel and the
           U.S.,
@@ -73,64 +76,162 @@
       </article>
     </section>
 
-    <section class="col-12 col-sm-12">
-      <h1 class="section-title">Culture & Travel</h1>
-      <article>
+    <section class="container col-12 col-sm-12 main-articles">
+      <h2 class="section-title font-weight-bold text-uppercase">Culture & Travel</h2>
+      <article class="">
         <a href="#"><img src="assets/partingshot-andredeshields.jpg" alt="Diverse Person" class="img-responsive">
-          <h2>Hadestown's André De Shields Talks Diversity on Broadway</h2>
+          <h4 class="">Hadestown's Andree De Shields Talks Diversity on Broadway</h2>
         </a>
         <p>"There is no one like you. There has never been anyone like you. There shall never be anyone like you.
           Therefore, know
           thyself; be thyself," says the Hadestown star.</p>
-        <button class="btn btn-xs">Broadway</button>
+        <a class="grey-link" href="#">Broadway</a>
       </article>
     </section>
 
-    <section class="col-12 col-sm-12">
-      <h1 class="section-title">Featured Stories</h1>
-      <article>
-        <a href="#"><img src="assets/climate-protest.jpg" alt="Protesting Person" class="img-responsive">
-          <h2>Survey of 28 Countries Finds U.S. Has Highest Proportion of Climate Deniers</h2>
-        </a>
+    <section class="container col-12 col-sm-12 min-width">
+      <h2 class="section-title font-weight-bold text-uppercase">Featured Stories</h2>
+      <article class="min-width" >
+        <div class="position-relative">
+          <a href="#">
+            <img src="assets/climate-protest.jpg" alt="Protesting Person" class="img-responsive">
+          </a>
+          <a class="btn-overlay position-absolute text-uppercase" href="#">News</a>
+        </div>
+          <a href="#">
+            <h4 class="font-weight-bold">Survey of 28 Countries Finds U.S. Has Highest Proportion of Climate Deniers</h4>
+          </a>
+      
         <p>Six percent of Americans denied that the climate is changing, while an additional 9 percent said the climate
           is changing
           but human activity is not responsible.</p>
-        <button class="btn btn-sm">News</button>
       </article>
     </section>
 
-    <section class="col-12 col-sm-12">
-      <h1 class="section-title">Best Online Stores</h1>
-      <p>Where should customers go for the best products, prices and service? We ranked the top 1,000 shops across eight
-        industries and 39 categories.</p>
-      <article>
-        <a href="#"><img src="assets/abet-accreditation-2019.jpg" alt="Studying Person" class="img-responsive">
-          <button class="btn btn-sm">News</button>
-          <h2>Why You Should Be An Engineer & Why ABET Is Important to that Path.</h2>
-        </a>
-        <p>Do you dream of changing the world? Do you want to make a practical difference in people’s lives? Engineers
-          do both these things. Find out how to join them.</p>
+    <section class="container col-12 col-sm-12 min-width">
+      <h2 class="section-title font-weight-bold text-uppercase">Best Online Stores</h2>
+      <p>Where should customers go for the best products, prices and service? We ranked the top 1,000 shops across eight industries and 39 categories.</p>
+
+      <article class="min-width">
+        <div class="position-relative">
+          <a class="position-absolute btn-overlay blue-text text-uppercase" href="#">Sponsored Insight</a>
+          <a href="#">
+            <img src="assets/abet-accreditation-2019.jpg" alt="Studying Person" class="img-responsive min-width">
+          </a>
+        </div>
+        <div class="whole-b">
+          <a href="#">
+            <h4 class="font-weight-bold">Why You Should Be An Engineer & Why ABET Is Important to that Path.</h4>
+            <p>Do you dream of changing the world? Do you want to make a practical difference in people’s lives? Engineers
+              do both these things. Find out how to join them.</p>
+          </a>
+        </div>
       </article>
     </section>
 
-    <div class="col-12 col-sm-12">
+    <section class="container col-12 col-sm-12 min-width">
+      <h2 class="section-title font-weight-bold text-uppercase">Opinion</h2>
       <ul class="list-grup">
-        <li class="list-grup-item">
+        <li class="list-grup-item min-width">
           <img class="people-list " src="assets/okonjo-iweala.png" alt="Woman">
-          <div>
-            <a href="#">Developing Countries Already Tackle Climate Change</a>
+          <div class="">
+            <a href="#">
+               <h5 class="font-weight-bold">Trump Is Dangerously Unstable—and It's Almost Too Late for an Impeachment</h5>
+            </a>
             <p>By Ngozi Okonjo-Iweala</p>
           </div>
-
-
         </li>
       </ul>
-    </div>
+    </section>
+
+    <section class="container col-12 col-sm-12">
+      <h2 class="section-title font-weight-bold text-uppercase">
+        Latest News
+      </h2>
+      <article>
+        <a href="#">
+          <img src="assets/mega-millions-ticket.jpg" alt="Mega millions ticket">
+        </a>
+        <a href="#">
+          <h2>Mega Millions Drawing For 09/17/19: Tuesday Jackpot is $192 Million</h2>
+        </a>
+      </article>
+    </section>
+  </div>
+
+  <div class="container">
+
+    <a class="col-12 col-sm-12" href="#">
+      <h2>September Issue</h2>
+      <img src="assets/september-13-20-2019.jpg" alt="September issue" class="img-responsive">
+      <div>See all features</div>
+    </a>
+
+    <section class="col-12 col-sm-12">
+      <div>
+
+        <h2 class="section-title font-weight-bold text-uppercase">In the magazine </h2>
+        <article>
+          <a href="#"><img src="assets/fe-anxiety-01-973638320.jpg" alt="Article img" class="img-responsive"></a>
+          <div>
+            <a href="#" class="section"> Cover</a>
+            <a href="#" class="theme">Tech & Science</a>
+          </div>
+          <div>
+            <a href="#">
+              <h2>Scientists' Understanding of Anxiety is Radically Evolving</h2>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
 
   </div>
 
+  <section class="container col-12 col-sm-12">
+    <h2 class="section-title font-weight-bold text-uppercase"> Editor's Pick</h2>
+    <article class="overlayed">
+      <a href="#"><img src="assets/plastic-shopping.jpg" alt="Shopping Person" class="img-responsive">
+        <h2>I Tried To Give Up Plastic for a Month⁠—and It Was Harder Than I Thought</h2>
+      </a>
+      <p>Millions of people have taken part in the Plastic-Free July challenge, which asks participants to help reduce
+        their
+        plastic waste by choosing to refuse to use single-use plastics.</p>
+      <a class="btn-overlay" href="#">Tech & Science</a>
+    </article>
+  </section>
+
+  <section class="container col-12 col-sm-12">
+    <h2 class="section-title font-weight-bold text-uppercase"> Featured Slideshows</h2>
+    <article>
+      <a href="#"><img src="assets/muir-pass-great-alone.jpg" alt="Snow pass" class="img-responsive">
+        <h2>The Great Alone: Walking the Pacific Crest Trail</h2>
+      </a>
+    </article>
+  </section>
+
+  <section class="container col-12 col-sm-12">
+    <h2>US</h2>
+    <a href="#">
+      <img src="assets/parkland-father-hoodies-school-shooting.jpg" alt="Father" class="img-res">
+      <h2>Parkland Father Slams Hoodies With School Shooting Names, Fake Bullet Holes</h2>
+    </a>
+
+    <a href="#">
+      <img src="assets/parkland-father-hoodies-school-shooting.jpg" alt="Father" class="img-res">
+      <h2>Parkland Father Slams Hoodies With School Shooting Names, Fake Bullet Holes</h2>
+    </a>
+
+    <div>
+      <a href="#" class="d-inline-flex">
+        <img src="assets/donald-trump.jpg" alt="Trump">
+        <h3>GOP 'Revealing Discomfort with Democracy' by Blocking Trump Challengers</h3>
+      </a>
+    </div>
 
 
+  </section>
 
 
 
