@@ -40,8 +40,6 @@ a:hover {
 .btn-default {
   color: white;
   background: red;
-  word-wrap: none;
-  width: 78px;
 }
 
 .btn-white {
@@ -120,4 +118,22 @@ a:hover {
 .bot-border {
   border-bottom: 1px solid rgba(173, 173, 173, 0.157);
   padding-bottom: 10px;
+}
+
+.september {
+  bottom: -8px;
+}
+
+.all-september {
+  background-color: rgb(238, 238, 238);
+  padding: 10px 0;
+}
+
+.all-september:hover {
+  background-color: rgb(224, 222, 222);
+}
+
+.mag-sec {
+  padding: 7px 10px;
+  margin: 10px 0;
 }
