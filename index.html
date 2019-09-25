@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- --breakpoint-xs: 0;
-        --breakpoint-sm: 576px;
-        --breakpoint-md: 768px;
-        --breakpoint-lg: 992px;
-        --breakpoint-xl: 1200px; -->
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,30 +15,34 @@
 
 <body class="min-width">
 
-  <nav class="navbar sticky-top flex-nowrap    justify-content-between overflow-hidden">
+  <nav class="navbar max-width sticky-top flex-nowrap    justify-content-between overflow-hidden d-flex align-items-center">
+    <p class="d-none d-lg-flex font-weight-bold btn-default pad">Day, month, year</p>
     <a href="#" class="navbar-brand h-100">
       <img src="assets/newsweeklovo.svg" alt="Newsweek logo">
     </a>
     <div>
-      <div class="btn-group .btn-group-xs   ">
+      <div class="btn-group .btn-group-xs">
         <button class="btn btn-default navbar-btn text-capitalize text-nowrap">Sign In</button>
-        <button class="btn btn-white navbar-btn text-capitalize">Subscribe <span
-            class="glyphicon glyphicon-chevron-right"></span></button>
+        <button class="btn btn-white navbar-btn text-capitalize">
+          Subscribe
+        </button>
+        <a class="d-none d-lg-block" href="#">
+          <span class="glyphicon-menu-hamburger"></span>
+        </a>
       </div>
-      <span class="glyphicon-menu-hamburger"></span>
     </div>
   </nav>
 
-  <div class="d-none d-lg-block d-xl-block overflow-hidden">
-    <a class="navbar-link" href="#">U.S.</a>
-    <a class="navbar-link" href="#">World</a>
-    <a class="navbar-link" href="#">Business</a>
-    <a class="navbar-link" href="#">Tech & Science</a>
-    <a class="navbar-link" href="#">Culture</a>
-    <a class="navbar-link" href="#">Sports</a>
-    <a class="navbar-link" href="#">Health</a>
-    <a class="navbar-link" href="#">Opinion</a>
-    <a class="navbar-link" href="#">Vantage</a>
+  <div class="d-none max-width d-lg-flex overflow-hidden">
+    <a class="navbar-link flex-fill " href="#">U.S.</a>
+    <a class="navbar-link flex-fill" href="#">World</a>
+    <a class="navbar-link flex-fill" href="#">Business</a>
+    <a class="navbar-link flex-fill" href="#">Tech & Science</a>
+    <a class="navbar-link flex-fill" href="#">Culture</a>
+    <a class="navbar-link flex-fill" href="#">Sports</a>
+    <a class="navbar-link flex-fill" href="#">Health</a>
+    <a class="navbar-link flex-fill" href="#">Opinion</a>
+    <a class="navbar-link flex-fill" href="#">Vantage</a>
     <input type="text" class="navbar-form" placeholder="Search">
 
   </div>
@@ -392,15 +390,17 @@
 
   </div>
 
-  <div class="container-fluid row overflow-hidden">
+  <div class="container-fluid overflow-hidden">
     <section class="row">
       <h2 class="d-none">Magazine Cover and sections</h2>
       <a class="col-12 col-sm-12 col-md-3" href="#">
         <div class="position-relative padded">
-          <h2 class="btn-overlay position-absolute text-uppercase text-nowrap september d-md-none d-lg-block font-weight-bold">
+          <h2
+            class="btn-overlay position-absolute text-uppercase text-nowrap september d-md-none d-lg-block font-weight-bold">
             September Issue
           </h2>
-          <h2 class="btn-overlay position-absolute text-uppercase text-nowrap september2 d-none d-md-block d-lg-none font-weight-bold">
+          <h2
+            class="btn-overlay position-absolute text-uppercase text-nowrap september2 d-none d-md-block d-lg-none font-weight-bold">
             September Issue
           </h2>
           <img src="assets/september-13-20-2019.jpg" alt="September issue" class="img-fluid contain ">
@@ -663,24 +663,24 @@
       </article>
 
     </section>
-</div>
+  </div>
 
-  <div class="row container-fluid overflow-hidden">
+  <div class="container-fluid overflow-hidden">
     <section class="flex-sm-wrap row">
       <h2 class="section-title font-weight-bold text-uppercase text-danger onetwenty col-md-12">
         U.S.
       </h2>
       <div class="row col-md-8">
-              <a class="col-md-6" href="#">
-                <img src="assets/parkland-father-hoodies-school-shooting.jpg" alt="Father" class="img-res">
-                <h5 class="font-weight-bold padded-bot">Parkland Father Slams Hoodies With School Shooting Names, Fake Bullet
-                  Holes</h5>
-              </a>
-              <a class="col-md-6" href="#">
-                <img src="assets/parkland-father-hoodies-school-shooting.jpg" alt="Father" class="img-res">
-                <h5 class="font-weight-bold padded-bot">Parkland Father Slams Hoodies With School Shooting Names, Fake Bullet
-                  Holes</h5>
-              </a>
+        <a class="col-md-6" href="#">
+          <img src="assets/parkland-father-hoodies-school-shooting.jpg" alt="Father" class="img-res">
+          <h5 class="font-weight-bold padded-bot">Parkland Father Slams Hoodies With School Shooting Names, Fake Bullet
+            Holes</h5>
+        </a>
+        <a class="col-md-6" href="#">
+          <img src="assets/parkland-father-hoodies-school-shooting.jpg" alt="Father" class="img-res">
+          <h5 class="font-weight-bold padded-bot">Parkland Father Slams Hoodies With School Shooting Names, Fake Bullet
+            Holes</h5>
+        </a>
       </div>
       <div class="col-md-4 flex-column">
         <a href="#" class="d-inline-flex bot-border">
@@ -698,8 +698,110 @@
       </div>
     </section>
 
-    
+    <section class="flex-sm-wrap row">
+      <h2 class="section-title font-weight-bold text-uppercase text-danger onetwenty col-md-12">
+        World
+      </h2>
+      <div class="row col-md-8">
+        <a class="col-md-6" href="#">
+          <img src="assets/parkland-father-hoodies-school-shooting.jpg" alt="Father" class="img-res">
+          <h5 class="font-weight-bold padded-bot">Parkland Father Slams Hoodies With School Shooting Names, Fake Bullet
+            Holes</h5>
+        </a>
+        <a class="col-md-6" href="#">
+          <img src="assets/parkland-father-hoodies-school-shooting.jpg" alt="Father" class="img-res">
+          <h5 class="font-weight-bold padded-bot">Parkland Father Slams Hoodies With School Shooting Names, Fake Bullet
+            Holes</h5>
+        </a>
+      </div>
+      <div class="col-md-4 flex-column">
+        <a href="#" class="d-inline-flex bot-border">
+          <img class="more-stories-img" src="assets/donald-trump.jpg" alt="Trump">
+          <h5 class="font-weight-bold">GOP 'Revealing Discomfort with Democracy' by Blocking Trump Challengers</h5>
+        </a>
+        <a href="#" class="d-inline-flex bot-border">
+          <img class="more-stories-img" src="assets/donald-trump.jpg" alt="Trump">
+          <h5 class="font-weight-bold">GOP 'Revealing Discomfort with Democracy' by Blocking Trump Challengers</h5>
+        </a>
+        <a href="#" class="d-inline-flex bot-border">
+          <img class="more-stories-img" src="assets/donald-trump.jpg" alt="Trump">
+          <h5 class="font-weight-bold">GOP 'Revealing Discomfort with Democracy' by Blocking Trump Challengers</h5>
+        </a>
+      </div>
+    </section>
+
+    <section class="flex-sm-wrap row">
+      <h2 class="section-title font-weight-bold text-uppercase text-danger onetwenty col-md-12">
+        Business
+      </h2>
+      <div class="row col-md-8">
+        <a class="col-md-6" href="#">
+          <img src="assets/parkland-father-hoodies-school-shooting.jpg" alt="Father" class="img-res">
+          <h5 class="font-weight-bold padded-bot">Parkland Father Slams Hoodies With School Shooting Names, Fake Bullet
+            Holes</h5>
+        </a>
+        <a class="col-md-6" href="#">
+          <img src="assets/parkland-father-hoodies-school-shooting.jpg" alt="Father" class="img-res">
+          <h5 class="font-weight-bold padded-bot">Parkland Father Slams Hoodies With School Shooting Names, Fake Bullet
+            Holes</h5>
+        </a>
+      </div>
+      <div class="col-md-4 flex-column">
+        <a href="#" class="d-inline-flex bot-border">
+          <img class="more-stories-img" src="assets/donald-trump.jpg" alt="Trump">
+          <h5 class="font-weight-bold">GOP 'Revealing Discomfort with Democracy' by Blocking Trump Challengers</h5>
+        </a>
+        <a href="#" class="d-inline-flex bot-border">
+          <img class="more-stories-img" src="assets/donald-trump.jpg" alt="Trump">
+          <h5 class="font-weight-bold">GOP 'Revealing Discomfort with Democracy' by Blocking Trump Challengers</h5>
+        </a>
+        <a href="#" class="d-inline-flex bot-border">
+          <img class="more-stories-img" src="assets/donald-trump.jpg" alt="Trump">
+          <h5 class="font-weight-bold">GOP 'Revealing Discomfort with Democracy' by Blocking Trump Challengers</h5>
+        </a>
+      </div>
+    </section>
+
+    <section class="flex-sm-wrap row">
+      <h2 class="section-title font-weight-bold text-uppercase text-danger onetwenty col-md-12">
+        Sports
+      </h2>
+      <div class="row col-md-8">
+        <a class="col-md-6" href="#">
+          <img src="assets/parkland-father-hoodies-school-shooting.jpg" alt="Father" class="img-res">
+          <h5 class="font-weight-bold padded-bot">Parkland Father Slams Hoodies With School Shooting Names, Fake Bullet
+            Holes</h5>
+        </a>
+        <a class="col-md-6" href="#">
+          <img src="assets/parkland-father-hoodies-school-shooting.jpg" alt="Father" class="img-res">
+          <h5 class="font-weight-bold padded-bot">Parkland Father Slams Hoodies With School Shooting Names, Fake Bullet
+            Holes</h5>
+        </a>
+      </div>
+      <div class="col-md-4 flex-column">
+        <a href="#" class="d-inline-flex bot-border">
+          <img class="more-stories-img" src="assets/donald-trump.jpg" alt="Trump">
+          <h5 class="font-weight-bold">GOP 'Revealing Discomfort with Democracy' by Blocking Trump Challengers</h5>
+        </a>
+        <a href="#" class="d-inline-flex bot-border">
+          <img class="more-stories-img" src="assets/donald-trump.jpg" alt="Trump">
+          <h5 class="font-weight-bold">GOP 'Revealing Discomfort with Democracy' by Blocking Trump Challengers</h5>
+        </a>
+        <a href="#" class="d-inline-flex bot-border">
+          <img class="more-stories-img" src="assets/donald-trump.jpg" alt="Trump">
+          <h5 class="font-weight-bold">GOP 'Revealing Discomfort with Democracy' by Blocking Trump Challengers</h5>
+        </a>
+      </div>
+    </section>
+
   </div>
+
+  <footer>
+
+
+
+
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
