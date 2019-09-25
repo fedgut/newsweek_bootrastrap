@@ -165,3 +165,11 @@ a:hover {
 .onetwenty {
   font-size: 150%;
 }
+
+.contain {
+  object-fit: contain;
+}
+
+.img-fluid {
+  width: 100%;
+}
