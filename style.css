@@ -132,13 +132,18 @@ a:hover {
 
 .bot-border {
   border-bottom: 1px solid rgba(173, 173, 173, 0.315);
-  margin-top: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .september {
   bottom: -8px;
   padding-left: 30px;
+}
+
+.september2 {
+  bottom: -8px;
+  padding-left: 30px;
+  font-size: 90%;
 }
 
 .all-september {
