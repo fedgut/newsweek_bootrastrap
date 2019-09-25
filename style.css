@@ -41,6 +41,11 @@ a:hover {
   height: 60px;
 }
 
+.container-fluid {
+  max-width: 1200px;
+  margin: 16px auto;
+}
+
 .btn-default {
   color: white;
   background: red;
@@ -87,6 +92,12 @@ a:hover {
   margin-top: 1rem;
 }
 
+.stories-img {
+  width: 135px;
+  height: 90px;
+  object-fit: contain;
+}
+
 .more-stories-img {
   width: 135px;
   height: 90px;
@@ -121,7 +132,7 @@ a:hover {
 
 .bot-border {
   border-bottom: 1px solid rgba(173, 173, 173, 0.315);
-  padding-bottom: 5px;
+  margin-top: 5px;
   margin-bottom: 10px;
 }
 
