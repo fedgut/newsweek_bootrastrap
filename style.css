@@ -41,6 +41,10 @@ a:hover {
   height: 60px;
 }
 
+.navbar-form {
+  border: none;
+}
+
 .max-width {
   max-width: 1200px;
   margin: 0 auto;
@@ -217,8 +221,13 @@ a:hover {
   width: 100%;
 }
 
-.share-icon {
+.icon {
   width: 1rem;
+}
+
+.large-icon {
+  width: 2.5rem;
+  padding-left: 7px;
 }
 
 .bot-logo {
@@ -226,8 +235,8 @@ a:hover {
 }
 
 .nava {
-  margin: 10px 5px 0 0;
-  padding-right: 7px;
+  margin: 10px 5px 10px 0;
+  padding: 0 5px 0 0;
 }
 
 @media only screen and (min-width: 720px) {
