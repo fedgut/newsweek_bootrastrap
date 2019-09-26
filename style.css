@@ -204,3 +204,7 @@ a:hover {
 .img-fluid {
   width: 100%;
 }
+
+.sub-max {
+  width: 170px;
+}
