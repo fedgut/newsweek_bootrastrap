@@ -1,7 +1,4 @@
-# newsweek_bootrastrap
-Building a clone on the home page on Newsweek with Bootrstrap 
-
-# Building with rBootstrap
+# Building with Bootstrap
 A clone of Newsweek with responsive design using Bootstrap 
 
 [Demo](https://raw.githack.com/fedgut/newsweek_bootrastrap/create-nw-page/index.html)
