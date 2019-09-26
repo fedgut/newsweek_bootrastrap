@@ -16,7 +16,7 @@ A clone of Newsweek with responsive design using Bootstrap
 - [Microverse](https://microverse.org)
 - [Newsweek](https://newsweek.com/)
 - [VS Code](https://code.visualstudio.com/)
-- [Newsweek](https://getbootstrap.com/)
+- [Bootstrap](https://getbootstrap.com/)
 
 # Contact
  [@eduardogpulido](https://twitter.com/eduardogpulido)
