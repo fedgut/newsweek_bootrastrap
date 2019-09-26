@@ -216,3 +216,7 @@ a:hover {
   height: 160px;
   width: 100%;
 }
+
+.share-icon {
+  width: 1rem;
+}
